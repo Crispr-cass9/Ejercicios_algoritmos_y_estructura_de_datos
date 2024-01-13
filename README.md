@@ -1,17 +1,8 @@
 
-<style>
-.red {
-    color: red;
-}
 
-.blue {
-    color: blue;
-}
-</style>
+# Ejercicios recursividad con python
 
-# <span class='blue'>Ejercicios recursividad con python</span>
-
-## <span class='red'>Ejercicio 1</span>
+## Ejercicio 1
 
  Implementar una función que permita obtener el valor en la sucesión de Fibonacci para un número dado
 
@@ -28,7 +19,7 @@ print(fibonacci(7))
  La razón de esta lentitud es la cantidad de veces que repetimos operaciones que ya hemos realizado, he encontrado un paper que
  lo explica por lo que les dejo esta bonita imagen de aca.
 
- ![Alt text](image.png)
+ ![Alt text](./Cap_1-Recursividad/image.png)
 
  Una forma de mejorarlo es hacerlo sin recursividad, si pensamos el problema de una forma distinta (Comenzando desde 1 e ir aumentando hasta llegar al valor ingresado en vez de comenzar desde el valor ingresado e ir disminuyendo hasta 1), podemos generar un algoritmo iterativo en el que sólo realizaremos cada cálculo 1 vez
 
@@ -48,7 +39,7 @@ print(fibonacci(7))
 
  ```
 
-## <span class='red'>Ejercicio 2 </span>
+## Ejercicio 2 
  
  Implementar una función que calcule la suma de todos los números enteros comprendidos entre cero y un número entero positivo dado.
 
@@ -70,7 +61,7 @@ print(fibonacci(7))
  print(sumatoria(-10))
  ```
 
-## <span class="red">Ejercicio 3</span>
+## Ejercicio 3
 
  Implementar una función para calcular el producto de dos números enteros dados.
 
@@ -88,7 +79,7 @@ print(fibonacci(7))
  #--> 20
  ```
 
-## <span class="red">Ejercicio 4</span>
+## Ejercicio 4
 
  Implementar una función para calcular la potencia dado dos números enteros, el primero representa la base y segundo el exponente
 
@@ -104,7 +95,7 @@ print(fibonacci(7))
  print(potencia(-5, -4))
  #--> 0.0016
 ```
-## <span class="red">Ejercicio 5</span>
+## Ejercicio 5
 
  Desarrollar una función que permita convertir un número romano en un número decimal.
 
@@ -154,7 +145,7 @@ print(fibonacci(7))
 print(romano_a_decimal('XLV'))
 #--> 45
 ```
-### <span class="red">Versión Número 2</span>
+### Versión Número 2
 
 ```python
 def romano_a_decimal(string):
@@ -173,7 +164,7 @@ print(romano_a_decimal('XLV'))
 #--> 45
 ```
 
-## <span class="red">Ejercicio 6</span>
+## Ejercicio 6
  Dada una secuencia de caracteres, obtener dicha secuencia invertida
 
 ```python
@@ -186,11 +177,11 @@ def revertir(string):
 print(revertir('mecanografía'))
 #-->aífargonacem
 ```
-## <span class="red">Ejercicio 7</span>
+## Ejercicio 7
 
  Desarrollar un algoritmo que permita calcular la siguiente serie:
 
- ![Alt text](image-1.png)
+ ![Alt text](./Cap_1-Recursividad/image-1.png)
 
  ```python
  def serie(n):
@@ -205,19 +196,19 @@ print(serie(4))
 
 
 
-## <span class="red">Ejercicio 8</span>
+## Ejercicio 8
 
 ### Notas de Cristian, aún no logro resolverlo D:
 
 Implementar una función para calcular el logaritmo entero de número n en una base b. Recordar que:
 Eppa, notas de Cristian, el libro aparentemente tiene un pequeño error, aparece esta imagen:
-![Alt text](image-2.png)
+![Alt text](./Cap_1-Recursividad/image-2.png)
 
 Pero buscando un poco más de información sobre las propiedades de los logaritmos me he dado cuenta de que realmente debería ser esta la fórmula:
 
-![Alt text](image-3.png)
+![Alt text](./Cap_1-Recursividad/image-3.png)
 
-## <span class="red">Ejercicio 9</span>
+## Ejercicio 9
 
 Desarrollar un algoritmo que cuente la cantidad de dígitos de un número entero.
 
@@ -234,7 +225,7 @@ Desarrollar un algoritmo que cuente la cantidad de dígitos de un número entero
  print(contar_digitos(-1234886234))
  #--> 10
 ```
-## <span class="red">Ejercicio 10</span>
+## Ejercicio 10
  Desarrollar un algoritmo que invierta un número entero sin convertirlo a cadena.
 
  ```python
@@ -262,7 +253,7 @@ print(invertir(-123456789))
 #-->-987654321
 ```
 
-## <span class="red">Ejercicio 11</span>
+## Ejercicio 11
 
 Desarrollar el algoritmo de Euclides para calcular el máximo común divisor (MCD) de dos números enteros.
 
@@ -283,7 +274,7 @@ Desarrollar el algoritmo de Euclides para calcular el máximo común divisor (MC
     #-->50
  ```
 
-## <span class="red">Ejercicio 12</span>
+## Ejercicio 12
  Desarrollar el algoritmo de Euclides para calcular también el mínimo común múltiplo (MCM) de dos números enteros.
  
  ```python
@@ -303,7 +294,7 @@ Desarrollar el algoritmo de Euclides para calcular el máximo común divisor (MC
  #-->3150
 ```
 
-## <span class="red">Ejercicio 13</span>
+## Ejercicio 13
  Implementar un función recursiva que permita obtener el valor de an en una sucesión geométrica (o progresión geométrica) con un valor a1=2 y una razón r=-3. Además desarrollar un algoritmo que permita visualizar todos los valores de dicha sucesión desde a1 hasta an.
 
 
