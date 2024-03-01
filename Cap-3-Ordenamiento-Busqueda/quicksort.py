@@ -1,3 +1,11 @@
+import time
+import random
+
+lista = [random.randint(0, 1000000) for x in range(10000000)]
+maximo = max(lista)
+
+inicio = time.time()
+
 def quicksort(lista):
     if len(lista) <= 1:
         return lista
@@ -7,4 +15,8 @@ def quicksort(lista):
     menores = [x for x in lista[1:] if x < pivote]
     return quicksort(mayores) + [pivote] + quicksort(menores)
 
-print(quicksort([12, 5, 3, 2, 20, 0, 13, 17, 19, 11, 10]))
+print(quicksort(lista))
+
+final = time.time()
+
+print(final-inicio)
