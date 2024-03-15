@@ -66,4 +66,3 @@ def barrido(lista):
     while aux is not None:
         print(aux.info)
         aux = aux.sig
-
