@@ -5,6 +5,9 @@ class Lista():
     self.inicio = None
     self.tamanio = 0
 
+'''
+Esta función toma como entrada un nodo y los ordena según su prioridad en orden ascendente
+'''
 def insertar(lista, info, prioridad):
     nodo = nodoLista()
     nodo.info = info
@@ -22,8 +25,27 @@ def insertar(lista, info, prioridad):
         anterior.sig = nodo
     lista.tamanio += 1
 
+
+
 def es_vacia(lista):
     return lista.inicio is None
 
-def eliminar(lista, elemento):
-    
+
+
+def eliminar(lista, clave):
+    dato = none
+    if lista.inicio.info == Clave:
+        dato = lista.inicio.info
+        lista.inicio = lista.inicio.sig
+        lista.tamanio -= 1
+    else:
+        anterior = lista.inicio
+        actual = lista.inicio.sig
+        while actual is not None and actual.info != clave:
+            anterior = anterior.sig
+            actual = actual.sig
+        dato = actual.info
+        anterior.sig = actual.sig
+        lista.tamanio -= 1
+
+    return dato
